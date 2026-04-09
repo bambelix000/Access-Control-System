@@ -1,5 +1,6 @@
-package com.bombel.AccessControl.user;
+package com.bombel.AccessControl.user.dto;
 
+import com.bombel.AccessControl.user.UserRole;
 import lombok.Data;
 
 @Data

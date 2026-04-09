@@ -23,15 +23,15 @@ public class AuditLog {
 
     @ManyToOne
     @JoinColumn(name = "admin_id")
-    private User adminId;
+    private User admin;
 
     @ManyToOne
     @JoinColumn(name = "target_user_id")
-    private User targetUserId;
+    private User targetUser;
 
     @ManyToOne
     @JoinColumn(name = "device_id")
-    private Device deviceId;
+    private Device device;
 
     @Enumerated(EnumType.STRING)
     private Action action;

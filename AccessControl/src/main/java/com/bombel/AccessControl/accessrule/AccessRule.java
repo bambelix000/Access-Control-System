@@ -20,10 +20,10 @@ public class AccessRule {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User userId;
+    private User targetUser;
 
     @ManyToOne
     @JoinColumn(name = "device_id")
-    private Device deviceId;
+    private Device device;
 
 }
