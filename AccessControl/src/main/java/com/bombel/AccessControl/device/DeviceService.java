@@ -58,10 +58,10 @@ public class DeviceService {
                 .orElseThrow(() -> new IllegalArgumentException("Nieznany użytkownik."));
 
         AuditLog log = new AuditLog();
-        log.setTimestamp(LocalDateTime.now());
+        log.setTimestamp(request.getEventTime());
         log.setDevice(device);
         log.setTargetUser(user);
-        log.setAction(Action.LOCK_OPENED);
+        log.setAction(request.getAction());
         auditLogRepository.save(log);
     }
 }

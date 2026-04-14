@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DataInitializer {
 
-    private static final String MOCK_ESP32_MAC = "A0:B1:C2:D3:E4:F5";
+    private static final String MOCK_ESP32_MAC = "88:57:21:8E:46:38";
 
     @Bean
     CommandLineRunner initDatabase(DeviceRepository deviceRepository, UserRepository userRepository) {
